@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Projeto Portfolio</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+    <header>
+        <div class="scroll-up-btn">
+            <ion-icon name="chevron-up-outline"></ion-icon>
+        </div>
+        <div class="navbar">
+            <div class="max-width">
+                <div class="logo"><a href="#">Port<span>fólio</span></a></div>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#services">Portfólio</a></li>
+                    <li><a href="#skills">Formação</a></li>
+                    <li><a href="#teams">Certificados</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--home inicio-->
+<section class="home" id="home" style="background-color:black">
+    <div class="max-width">
+        <div class="home-content">
+            <div class="text-1">Olá, meu nome é</div>
+            <div class="text-2">Relinton Pinheiro</div>
+            <div class="text-3">eu sou <span class="typing"></span></div>
+            <a href="#contact">Contatar-me</a>
+        </div>
+    </div>
+    <div>
+        <span class="image fit"><img src="image/picwish.png" style="border-radius: 90%" height="90%" width="180%" alt=""></span>
+    </div>
+</section>
+
+<!--sessão sobre-->
+<section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">Sobre</h2>
+        <div class="about-content">
+            <div class="column left">
+                <img src="image/RelintonPinheiro.jpg" alt="">
+            </div>
+            <div class="column right">
+                <div class="text">Sou Relinton e sou <span class="typing-2"></span></div>
+                <p>
+                    Atuo desenvolvendo aplicações C#, utilizando tecnologias como .NET e .NET CORE,
+                    aplicando a modelagem de software Domain Driven Design, (DDD), seguindo os princípios de SOLID
+                    e padrões de projetos, combinando práticas de design e desenvolvimento para entregar um software de alta qualidade,
+                    robusto, escalável e flexível. Utilizo as abordagens Test Driven Development(TDD) e Behavior Driven Development(BDD) durante o desenvolvimento.
+                    Sou adepto às boas práticas de desenvolvimento. Realizo Manutenção de aplicações em produção, avaliação de falhas e análise de correção.
+                    Utilizo ferramentas de versionamento de código como o Bitbucket, utilizo metodologias de gestão de projetos, Git Kraken, Jira Software para monitoramento de tarefas e acompanhamento de projetos,
+                    estou sempre em busca de capacitação para me tornar um excelente profissional.
+                </p>
+                <a href="arquivos/CurriculoDigitalRelintonPinheiro.pdf" target="_blank">Curriculum Vitae</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--sessão serviços-->
+<section class="services" id="services">
+    <div class="max-width">
+        <h2 class="title">Portfólio</h2>
+        <div class="serv-content">
+            <div class="card">
+                <img src="image/petdelivery.png" alt="imgpetdelivery" height="100%" width="100%" />
+                <div class="box">
+                    <div class="text">Pet Delivery</div>
+                    <p>Sistema de delivery virtual para pet shops</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/portaldecursosbenedix.png" alt="imgportalcursosbenedix"  height="100%" width="100%"  />
+                <div class="box">
+                    <div class="text">Portal de Cursos</div>
+                    <p>Sistema Virtual de Cursos Musicais.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/sisdat.png" alt="imgsisdat" height="100%" width="100%"/>
+                <div class="box">
+                    <div class="text">Sis Dat</div>
+                    <p>Sistema de assistência téc. de motores</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/apidddnoticias.png" alt="imgsisapidddnoticia" height="100%" width="100%"/>
+                <div class="box">
+                    <div class="text">API NOTÍCIAS</div>
+                    <p>API DDD Notícias com Swagger</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/sisvpnp.png" alt="imgsisvpnp" height="100%" width="100%"/>
+                <div class="box">
+                    <div class="text">Sis VPNP</div>
+                    <p>Vendas de produtos não perecíveis</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image/graficoshighcharts.png" alt="imggraficoshighcharts" height="100%" width="100%"/>
+                <div class="box">
+                    <div class="text">Gráficos High Charts</div>
+                    <p>Functions para Montagem de Gráficos.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--sessão especialidade-->
+<section class="skills" id="skills">
+    <div class="max-width">
+        <h2 class="title">Formação acadêmica</h2>
+        <div class="skills-content">
+            <div class="column left">
+                <div class="text">Faculdade Interamericana de Porto Velho - UNIRON</div>
+                <p><strong>Bacharelado Sistemas de Informação</strong></p>
+                <p>ago de 2014 - dez de 2019</p>
+            </div>
+            <div class="column right">
+                <h4 class="text">Universidade Federal de Rondônia</h4>
+                <p><strong>Projeto de Capacitação e Desenvolvimento de Software para Dispositivos Móveis (PALOMAKOBA)</strong></p>
+                <p>ago de 2022 - mar de 2023</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--sessão equipe-->
+<section class="teams" id="teams">
+    <div class="max-width">
+        <h2 class="title">Licenças e certificados</h2>
+        <table class="table table-sm table-dark col-md-12">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th colspan="2">Curso</th>
+                    <th scope="col">Carga Horária</th>
+                    <th scope="col">Instituição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td colspan="2">Segurança Web: Vulnerabilidades de Sistemas e Owasp</td>
+                    <td>12 horas</td>
+                    <td>Alura Cursos</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td colspan="2">Scrum: Agilidade em seu Projeto</td>
+                    <td>10 horas</td>
+                    <td>Alura Cursos</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">APIS Rest com Asp.Net Core: da App Mvc para API</td>
+                    <td>12 horas</td>
+                    <td>Alura Cursos</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">APIS Rest com Asp.Net Core: Consumindo nossa API</td>
+                    <td>6 horas</td>
+                    <td>Alura Cursos</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Javascript para Web: Crie páginas dinâmicas</td>
+                    <td>10 horas</td>
+                    <td>Alura Cursos</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Asp.Net Core: Uma WebApp usando o padrão Mvc</td>
+                    <td>12 horas</td>
+                    <td>Alura Cursos</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Bootstrap 4: Criando uma landing page responsiva</td>
+                    <td>8 horas</td>
+                    <td>Alura Cursos</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Design Patterns C# I: Boas práticas de Programação</td>
+                    <td>20 horas</td>
+                    <td>Alura Cursos</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Gráficos na Web: Criando e Customizando Gráficos</td>
+                    <td>10 horas</td>
+                    <td>Alura Cursos</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Http: Entendendo a Web por baixo dos panos </td>
+                    <td>14 horas</td>
+                    <td>Alura Cursos</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Lógica de Programação: Os primeiros programas com Javascript e Html</td>
+                    <td>16 horas</td>
+                    <td>Alura Cursos</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">LGPD: Conhecendo e entendendo seus impactos</td>
+                    <td>10 horas</td>
+                    <td>Alura Cursos</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">.Net 5 e Identity: implementando controle de usuário</td>
+                    <td>10 horas</td>
+                    <td>Alura Cursos</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Desenvolvimento Android Completo 2021</td>
+                    <td>107.5 horas</td>
+                    <td>Udemy</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Asp.Net Mvc 5 Project - Cms and Shopping Cart With Paypal</td>
+                    <td>9 horas</td>
+                    <td>Udemy</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Crie uma loja Virtual Completa | Android/IOS com Flutter|2021</td>
+                    <td>33.5 horas</td>
+                    <td>Udemy</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Analista de sistemas</td>
+                    <td>280 horas</td>
+                    <td>Faculdade Sul Mineira</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Segurança na web internet</td>
+                    <td>280 horas</td>
+                    <td>Faculdade Sul Mineira</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Monitor de tecnologias digitais</td>
+                    <td>240 horas</td>
+                    <td>UFAM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!--Sessão contato-->
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contato</h2>
+        <div class="contact-content">
+            <div class="column left">
+
+                <div class="icons">
+                    <div class="row">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <div class="info">
+                            <div class="head">Nome</div>
+                            <div class="sub-title">Relinton Pinheiro</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title"><a href="relintonproande@gmail.com" target="_blank">relintonproande@gmail.com</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--column left-->
+            <div class="column rigth">
+
+                <div class="alert alert-warning" role="alert">
+                    <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                    <span class="alert-inner--text"><strong>Whatsapp! </strong>(69) 9.9200-0396</span>
+                </div>
+
+                <div class="alert alert-primary" role="alert">
+                    <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                    <span class="alert-inner--text"><strong>Linkedin! </strong><a href="https://linkedin.com/in/relinton-pinheiro-9b443bb7" target="_blank">https://linkedin.com/in/relinton-pinheiro-9b443bb7</a></span>
+                </div>
+
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
+                    <span class="alert-inner--text"><strong>GitHub! </strong><a href="https://github.com/Relinton" target="_blank">https://github.com/Relinton</a></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!--sessão  footer-->
+    <footer>
+        <span>Todos os direitos reservados</span>
+    </footer>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js" asp-append-version="true"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+</body>
+</html>
