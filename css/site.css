@@ -99,7 +99,7 @@ html {
     background-size: cover;
     height: 100vh;
     color: #fff;
-    min-width: 380px !important;
+    min-width: 100% !important;
     font-family: 'Ubuntu', sans-serif;
     background-color: #01080E;
 }
