@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio Relinton Pinheiro</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
@@ -15,7 +15,7 @@
         </div>
         <div class="navbar">
             <div class="max-width">
-                <div class="logo"><a href="#">Port<span>fólio</span></a></div>
+                <div class="logo"><a href="#">Portfólio</a></div>
                 <ul class="menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">Sobre mim</a></li>
@@ -24,7 +24,7 @@
                     <li><a href="#teams">Certificados</a></li>
                     <li><a href="#contact">Contato</a></li>
                 </ul>
-                <div class="menu-btn">
+                <div class="menu-btn btn-home">
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
             </div>
@@ -32,27 +32,27 @@
     </header>
 
     <!--home inicio-->
-<section class="home" id="home" style="background-color:black; justify-content: center;">
-    <div class="max-width">
+<section class="home" id="home">
+    <div class="max-width developer">
         <div class="home-content">
-            <div class="text-1">Olá, meu nome é</div>
+            <div class="text-1">Olá, eu sou o</div>
             <div class="text-2">Relinton Pinheiro</div>
-            <div class="text-3">eu sou <span class="typing"></span></div>
-            <a href="#contact" style="display: flex;justify-content: center;">Contatar-me</a>
+            <div class="text-3"><span class="typing"></span></div>
         </div>
+        <a href="#about" style="display: flex;justify-content: center;">Veja mais</a>
     </div>
 </section>
 
 <!--sessão sobre-->
 <section class="about" id="about">
     <div class="max-width">
-        <h2 class="title">Sobre</h2>
+        <h2 class="title">Sobre mim</h2>
         <div class="about-content">
             <div class="column left">
                 <img src="image/RelintonPinheiro.jpg" alt="">
             </div>
             <div class="column right">
-                <div class="text">Sou Relinton e sou <span class="typing-2"></span></div>
+                <div class="text title-sobre-developer">Relinton Pinheiro<!--<span class="typing-2"></span>--></div>
                 <p>
                     Atuo desenvolvendo aplicações C#, utilizando tecnologias como .NET e .NET CORE,
                     aplicando a modelagem de software Domain Driven Design, (DDD), seguindo os princípios de SOLID
@@ -72,11 +72,10 @@
 <section class="services" id="services">
     <div class="max-width">
         <h2 class="title">Portfólio</h2>
-        <div class="serv-content">
-            
+        <div class="serv-content">            
             <div class="card">
                 <a href="https://serenatto-cafes-bistro-relinton.vercel.app/">
-                <img src="image/serenatto.PNG" alt="imagem alura cast" height="100%" width="100%" /></a>
+                <img src="image/serenatto.PNG" alt="imagem alura cast" height="80%" width="80%" /></a>
                 <div class="box">
                     <div class="text">Serenatto Café Bistrô</div>
                     <p>Desenvolvido o Front-End do 'Serenatto Café Bistro' durante a formação Front-end utilizando o framework css 'Bootstrap'</p>
@@ -85,7 +84,7 @@
 
             <div class="card">
                 <a href="https://projeto-loja-meteora-relinton.vercel.app/">
-                <img src="image/meteora.PNG" alt="imagem alura cast" height="100%" width="100%" /></a>
+                <img src="image/meteora.PNG" alt="imagem alura cast" height="80%" width="80%" /></a>
                 <div class="box">
                     <div class="text">Meteora, Loja de Roupas</div>
                     <p>Desenvolvido o Front-End do 'Meteora' durante a formação Front-end utilizando o framework css 'Bootstrap'</p>
@@ -94,7 +93,7 @@
             
             <div class="card">
                 <a href="https://alura-cast-web-relinton.vercel.app/">
-                <img src="image/aluracast.PNG" alt="imagem alura cast" height="100%" width="100%" /></a>
+                <img src="image/aluracast.PNG" alt="imagem alura cast" height="80%" width="80%" /></a>
                 <div class="box">
                     <div class="text">Alura Cast</div>
                     <p>Desenvolvido o Front-End do 'Alura Cast' durante o 'Curso de CSS Construindo Layouts com Grid na plataforma Alura'</p>
@@ -103,7 +102,7 @@
                         
             <div class="card">
                 <a href="https://alura-books-web-relinton.vercel.app/">
-                <img src="image/alurabooks.PNG" alt="imagem alura books" height="100%" width="100%" /></a>
+                <img src="image/alurabooks.PNG" alt="imagem alura books" height="80%" width="80%" /></a>
                 <div class="box">
                     <div class="text">Alura Books</div>
                     <p>Desenvolvido o Front-End do 'Alura Books' durante o 'curso de Html e CSS: responsividade com Mobile-First'</p>
@@ -112,7 +111,7 @@
             
              <div class="card">
                 <a href="https://alura-play-web-relinton.vercel.app/">
-                <img src="image/aluraplay.PNG" alt="imagem alura play" height="100%" width="100%" /></a>
+                <img src="image/aluraplay.PNG" alt="imagem alura play" height="80%" width="80%" /></a>
                 <div class="box">
                     <div class="text">Alura Play</div>
                     <p>Desenvolvido o Front-End do 'Alura Play' durante o 'Curso de CSS Flexbox e Layouts responsivos na plataforma Alura'</p>
@@ -121,7 +120,7 @@
             
             <div class="card">
                 <a href="https://alura-plus-web-relinton.vercel.app/">
-                <img src="image/aluraplus.PNG" alt="imagem alura plus" height="100%" width="100%" /></a>
+                <img src="image/aluraplus.PNG" alt="imagem alura plus" height="80%" width="80%" /></a>
                 <div class="box">
                     <div class="text">Alura Plus</div>
                     <p>Desenvolvido o Front-End do 'Alura Plus' durante o 'curso Html e Css praticando Html/Css na plataforma Alura'</p>
@@ -130,7 +129,7 @@
             
             <div class="card">
                 <a href="https://landing-page-responsive-relinton.vercel.app/">
-                <img src="image/landingpageresponsiva.PNG" alt="imagem landing page responsiva" height="100%" width="100%" /></a>
+                <img src="image/landingpageresponsiva.PNG" alt="imagem landing page responsiva" height="80%" width="80%" /></a>
                 <div class="box">
                     <div class="text">Fruta e Fruto</div>
                     <p>Desenvolvido o Front-End da 'Página de Receitas Fruta e Fruto' durante o 'curso de Bootstrap: landing page responsiva'</p>
@@ -139,7 +138,7 @@
             
             <div class="card">
                 <a href="https://to-do-list-compras-relinton.vercel.app/">
-                <img src="image/listadecompras.PNG" alt="imagem landing page responsiva" height="100%" width="100%" /></a>
+                <img src="image/listadecompras.PNG" alt="imagem landing page responsiva" height="80%" width="80%" /></a>
                 <div class="box">
                     <div class="text">ToDoList JS</div>
                     <p>Desenvolvido o ToDoList compras com html, css e JavaScript com armazenamento no localStorage</p>
@@ -148,7 +147,7 @@
 
             <div class="card">
                 <a href="https://play.google.com/store/apps/details?id=com.pinheirosdevelopers.viageiro">
-                <img src="image/viageiroApp.png" alt="imagem logo do app viageiro" height="60%" width="60%" /></a>
+                <img src="image/viageiroApp.png" alt="imagem logo do app viageiro" height="45%" width="45%" /></a>
                 <div class="box">
                     <div class="text">App Viageiro</div>
                     <p>Aplicativo desenvolvido em Java na IDE Android Studio, está disponível para download na Play Store</p>
@@ -175,7 +174,7 @@
             
             <div class="card">
                 <a href="https://jogo-super-mario-relinton.vercel.app/">
-                <img src="image/supermario.PNG" alt="imagem landing page responsiva" height="100%" width="100%" /></a>
+                <img src="image/supermario.PNG" alt="imagem landing page responsiva" height="80%" width="80%" /></a>
                 <div class="box">
                     <div class="text">Jogo Super Mário JS</div>
                     <p>Desenvolvido um simples jogo do Mário, com JavaScript</p>
@@ -183,7 +182,7 @@
             </div>
             
             <div class="card">
-                <img src="image/petdelivery.png" alt="imagem pet delivery" height="100%" width="100%" />
+                <img src="image/petdelivery.png" alt="imagem pet delivery" height="80%" width="80%" />
                 <div class="box">
                     <div class="text">Pet Delivery</div>
                     <p>Sistema de delivery virtual para pet shops</p>
@@ -191,7 +190,7 @@
             </div>
 
             <div class="card">
-                <img src="image/portaldecursosbenedix.png" alt="imagem portal de cursos"  height="100%" width="100%"  />
+                <img src="image/portaldecursosbenedix.png" alt="imagem portal de cursos"  height="80%" width="80%"  />
                 <div class="box">
                     <div class="text">Portal de Cursos</div>
                     <p>Sistema Virtual de Cursos Musicais.</p>
@@ -199,7 +198,7 @@
             </div>
 
             <div class="card">
-                <img src="image/apidddnoticias.png" alt="imagem sistema api ddd notícias" height="100%" width="100%"/>
+                <img src="image/apidddnoticias.png" alt="imagem sistema api ddd notícias" height="80%" width="80%"/>
                 <div class="box">
                     <div class="text">API NOTÍCIAS</div>
                     <p>API DDD Notícias com Swagger</p>
@@ -214,14 +213,15 @@
     <div class="max-width">
         <h2 class="title">Formação acadêmica</h2>
         <div class="skills-content">
-            <div class="column left">
+            <div class="card column left">
                 <div class="text">Faculdade Interamericana de Porto Velho - UNIRON</div>
                 <p><strong>Bacharelado em Sistemas de Informação</strong></p>
                 <p>ago de 2014 - dez de 2019</p>
             </div>
-            <div class="column right">
-                <h4 class="text">Universidade Federal de Rondônia</h4>
-                <p><strong>Projeto de Capacitação e Desenvolvimento de Software para Dispositivos Móveis (PALOMAKOBA)</strong></p>
+            <div class="card column right">
+                <h4 class="text">Universidade Federal de Rondônia <br /> UNIR</h4>
+                <p><strong>Projeto de Capacitação e Desenvolvimento de Software para Dispositivos Móveis</strong></p><br />
+                <p><strong>(PALOMAKOBA)</strong></p>
                 <p>ago de 2022 - mar de 2023</p>
             </div>
         </div>
@@ -372,7 +372,7 @@
     <div class="max-width">
         <h2 class="title">Contato</h2>
         <div class="contact-content">
-            <div class="column left">
+            <div class="card column left">
 
                 <div class="icons">
                     <div class="row">
@@ -391,7 +391,7 @@
                     </div>
                 </div>
             </div><!--column left-->
-            <div class="column rigth">
+            <div class="card column rigth">
 
                 <div class="alert alert-warning" role="alert">
                     <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span>
@@ -419,17 +419,14 @@
         <span>Desenvolvido por Relinton Pinheiro</span>
     </footer>
     <script src="lib/jquery/dist/jquery.min.js"></script>
-    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/site.js" asp-append-version="true"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>	
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
+    <script src="js/site.js" asp-append-version="true"></script>
 </body>
 </html>
