@@ -99,9 +99,14 @@ html {
     background-size: cover;
     height: 100vh;
     color: #fff;
+    min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
     background-color: #01080E;
 }
+
+    .home .max-width {
+        margin: auto 0 auto 40px;
+    }
 
     .home .home-content .text-1 {
         font-size: 27px;
@@ -265,6 +270,7 @@ section {
     margin: 4%;
     font-weight: bold;
 }
+
 
 .about, .services, .skills, .teams, .contact, footer {
     font-family: 'Roboto', sans-serif;
