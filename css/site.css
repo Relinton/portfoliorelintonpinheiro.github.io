@@ -267,14 +267,6 @@ section {
     font-weight: bold;
 }
 
-.about {
-margin: auto 0 auto 40px;
-}
-
-.services {
-margin: auto 0 auto 40px;
-}
-
 .about, .services, .skills, .teams, .contact, footer {
     font-family: 'Roboto', sans-serif;
 }
