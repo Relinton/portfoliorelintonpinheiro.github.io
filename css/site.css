@@ -271,6 +271,10 @@ section {
     font-weight: bold;
 }
 
+.table tbody tr:hover {
+    outline: auto;
+}
+
 
 .about, .services, .skills, .teams, .contact, footer {
     font-family: 'Roboto', sans-serif;
