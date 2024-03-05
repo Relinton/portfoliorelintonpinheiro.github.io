@@ -105,23 +105,23 @@ html {
 }
 
     .home .max-width {
-        margin: auto 0 auto 40px;
+        margin: auto 0 auto 0;
     }
 
-    .home .home-content .text-1 {
-        font-size: 27px;
+    .home .max-width .text-1 {
+        font-size: 50px;
         text-align: center;
     }
 
-    .home .home-content .text-2 {
-        font-size: 64px;
+    .home .max-width .text-2 {
+        font-size: 65px;
         font-weight: 500;
         margin-left: -3px;
         color: #2BDEFD;
     }
 
     .home .home-content .text-3 {
-        font-size: 27px;
+        font-size: 50px;
         margin: 5px 0;
         text-align: center;
     }
@@ -760,7 +760,7 @@ footer {
 @media (max-width: 947px) {
     .max-width {
         max-width: 800px;
-        padding: 0 50px;
+        padding: 0 25px;
     }
 
     .menu-btn {
