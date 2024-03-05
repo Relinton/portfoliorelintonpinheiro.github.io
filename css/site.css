@@ -1,9 +1,8 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    line-height: 1.4em;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -17,9 +16,22 @@ html {
     padding: 0 80px;
     margin: auto;
 }
+
+.developer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.developer a {
+    max-width: 210px;
+}
 /*  navbar   inicio*/
 .navbar {
     position: fixed;
+    backdrop-filter: blur(3px);
+    background-color: rgba(1, 8, 14, .9);
     width: 100%;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
@@ -28,7 +40,6 @@ html {
 }
 
     .navbar.sticky {
-        background: #004085;
         padding: 15px 0;
     }
 
@@ -53,34 +64,44 @@ html {
         color: #fff;
     }
 
+.navbar .menu li a.active {
+    color: #2BDEFD;
+    font-weight: bold;
+}
+
     .navbar .menu li {
         list-style: none;
         display: inline-block;
     }
 
-        .navbar .menu li a {
-            color: #fff;
-            font-size: 18px;
-            font-weight: 500;
-            margin-left: 25px;
-            transition: color 0.3s ease;
-        }
+.navbar .menu li a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
 
-            .navbar .menu li a:hover {
-                color: #004085;
-            }
+.navbar .menu li a:hover {
+    color: #2BDEFD;
+}
 
-    .navbar.sticky .menu li a:hover {
-        color: #fff;
-    }
+.navbar.sticky .menu li a:hover {
+    color: #2BDEFD;
+}
+
 /*  Home   inicio  */
 .home {
     display: flex;
+    justify-content: center;
     background-size: cover;
     height: 100vh;
     color: #fff;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
+    background-color: #01080E;
 }
 
     .home .max-width {
@@ -89,39 +110,43 @@ html {
 
     .home .home-content .text-1 {
         font-size: 27px;
+        text-align: center;
     }
 
     .home .home-content .text-2 {
-        font-size: 75px;
+        font-size: 64px;
         font-weight: 500;
         margin-left: -3px;
+        color: #2BDEFD;
     }
 
     .home .home-content .text-3 {
-        font-size: 40px;
+        font-size: 27px;
         margin: 5px 0;
+        text-align: center;
     }
 
         .home .home-content .text-3 span {
-            color: #004085;
+            color: #98D4DE;
             font-weight: 500;
         }
 
-    .home .home-content a {
+    .home div a {
         display: inline-block;
-        background: #004085;
-        color: #fff;
+        background: #2BFDBE;
+        color: #000000;
         font-size: 25px;
         padding: 12px 36px;
         margin-top: 20px;
         border-radius: 6px;
         border: 2px solid #004085;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
     }
 
-        .home .home-content a:hover {
-            color: #004085;
-            background: none;
-        }
+    .home div a:hover {
+        background-color: #D9FFF6;
+        color: #01080E;
+    }
 
 /*  Menu  Mobile  */
 .menu-btn {
@@ -140,7 +165,7 @@ html {
     text-align: center;
     line-height: 50px;
     color: #fff;
-    background: #004085;
+    background: #2BDEFD;
     border-radius: 6px;
     font-size: 30px;
     z-index: 9999;
@@ -193,6 +218,59 @@ section {
             transform: translateX(-50%);
         }
 
+.title-sobre-developer {
+    text-align: center;
+}
+
+.services {
+    background: #01080E;
+}
+
+.box p {
+    font-size: 14px;
+}
+
+
+.card {
+    margin: 10px auto;
+    box-shadow: 0px 2px 4px 0 rgba(0,0,0,0.2);
+    border-radius: 6px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+    .card:hover {
+        box-shadow: 1px 10px 16px 0 rgba(0,0,0,0.3);
+    }
+
+.card-title {
+    text-align: center;
+    color: #666666;
+    font-weight: bold;
+}
+
+.card-text {
+    font-weight: 500;
+    color: #66686b;
+}
+
+.card-image {
+    text-align: center;
+    margin: 5vh 0;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.title-heading {
+    font-size: 3em;
+    text-align: center;
+    margin: 4%;
+    font-weight: bold;
+}
+
+
 .about, .services, .skills, .teams, .contact, footer {
     font-family: 'Roboto', sans-serif;
 }
@@ -214,7 +292,11 @@ section {
     }
 
     .about .about-content .right {
-        width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
     }
 
         .about .about-content .right .text {
@@ -232,21 +314,21 @@ section {
         }
 
         .about .about-content .right a {
-            display: inline-block;
-            background: #004085;
-            color: #fff;
-            font-size: 20px;
-            font-weight: 500;
-            padding: 10px 30px;
-            margin-top: 20px;
-            border-radius: 6px;
-            border: 2px solid #004085;
-            transition: all 0.3s ease;
+    display: inline-block;
+    background: #2BDEFD;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #2BDEFD;
+    transition: all 0.3s ease;
         }
 
             .about .about-content .right a:hover {
-                color: #004085;
-                background: none;
+                background: #01080E;
+                color: #fff;
             }
 
     .about .about-content .left img {
@@ -257,7 +339,7 @@ section {
     }
 /*  sessão serviços */
 .services, .teams {
-    background: #111;
+    background: #01080E;
     color: #fff;
 }
 
@@ -271,21 +353,31 @@ section {
         background: #222;
         text-align: center;
         border-radius: 6px;
-        padding: 20px 25px;
+        padding: 1rem !important;
         cursor: pointer;
         transition: all 0.3s ease;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-box-pack: center;
+        position: relative;
+        top: 0;
+        box-shadow: 5px 12px 12px rgba(0,0,0,.04);
+        background-color: #012633;
+        animation-duration: 0.7s;
+        animation-timing-function: ease-out;
+        animation-delay: 0.5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        padding: 0.0625rem;
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 25px), calc(100% - 25px) 100%, 0 100%);
     }
 
-        .services .serv-content .card:hover {
-            background: #004085;
+        .serv-content .card:hover {
+            box-shadow: 1px 10px 16px 0 rgba(0,0,0,0.3);
         }
 
         .services .serv-content .card .box {
             transition: all 0.3s ease;
-        }
-
-        .services .serv-content .card:hover .box {
-            transform: scale(1.05);
         }
 
         .services .serv-content .card ion-icon {
@@ -298,7 +390,7 @@ section {
         }
 
         .services .serv-content .card .text {
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 500;
             margin: 10px 0 7px 0;
         }
@@ -307,12 +399,25 @@ section {
     content: "Sistemas de Informação";
 }*/
 
+.skills-content div div {
+    font-family: "Chakra Petch", sans-serif;
+}
+
 .skills .skills-content .column {
     width: calc(50% - 30px);
 }
 
+.skills .skills-content .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 44px;
+}
+
 .skills .skills-content .left .text {
-    font-size: 25px;
+    text-align: center;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -338,6 +443,18 @@ section {
         color: #004085;
         background: none;
     }
+
+.skills .skills-content .right {
+    padding: 15px;
+    text-align: center;
+}
+
+.skills .skills-content .right .text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
 
 .skills .skills-content .right .bars {
     margin-bottom: 15px;
@@ -465,6 +582,21 @@ section {
     width: calc(50% - 30px);
 }
 
+.contact-content .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content .rigth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 37px;
+    gap: 0.5rem;
+}
+
 .contact .contact-content {
     align-items: flex-start;
 }
@@ -572,7 +704,7 @@ section {
 
 /*  sessão footer  */
 footer {
-    background: #111;
+    background: #01080E;
     padding: 20px 23px;
     color: #fff;
     text-align: center;
@@ -589,6 +721,22 @@ footer {
 
 
 /*  responsivo  */
+
+@media only screen and (min-width: 280px) and (max-width: 559px) {
+.home .home-content .text-2 {
+    font-size: 30px !important;
+}
+
+.home .home-content .text-1 {
+    font-size: 24px !important;
+}
+
+.home .home-content .text-3 {
+    font-size: 20px !important;
+}
+
+}
+
 @media (max-width: 1300px) {
     .navbar .max-width {
         margin-left: 0;
@@ -625,7 +773,7 @@ footer {
         height: 100vh;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #01080E;
         padding-top: 80px;
         text-align: center;
         transition: all 0.3s ease;
