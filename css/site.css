@@ -585,7 +585,8 @@ section {
 }*/
 
 .contact .contact-content .column {
-    width: calc(50% - 30px);
+    width: calc(36% - 30px);
+    padding-bottom: 1rem;
 }
 
 .contact-content .left {
