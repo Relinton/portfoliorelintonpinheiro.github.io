@@ -133,7 +133,7 @@ html {
 
     .home div a {
         display: inline-block;
-        background: #2BFDBE;
+        background: linear-gradient(45deg, #2BFDBE, #004085);
         color: #000000;
         font-size: 25px;
         padding: 12px 36px;
@@ -166,7 +166,7 @@ html {
     text-align: center;
     line-height: 50px;
     color: #fff;
-    background: #2BDEFD;
+    background: linear-gradient(45deg, #2BFDBE, #004085);
     border-radius: 6px;
     font-size: 30px;
     z-index: 9999;
@@ -321,8 +321,8 @@ section {
 
         .about .about-content .right a {
     display: inline-block;
-    background: #2BDEFD;
-    color: #000000;
+    background: linear-gradient(45deg, #2BFDBE, #004085);
+    color: #010830;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
