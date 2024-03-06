@@ -276,6 +276,12 @@ section {
     outline: auto;
 }
 
+.perfil-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .perfil-alura {
     width: 18rem;
     padding: 0.5rem;
