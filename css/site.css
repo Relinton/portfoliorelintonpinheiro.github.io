@@ -626,6 +626,13 @@ section {
     transition: 0.3s;
 }
 
+.fa-phone {
+    color: #004085;
+}
+.fa-envelope {
+    color: #004085;
+}
+
 .contact .contact-content {
     align-items: flex-start;
 }
