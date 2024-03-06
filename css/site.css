@@ -623,7 +623,7 @@ section {
 
     .contact .contact-content .row {
         display: flex;
-        height: 65px;
+        height: 35px;
         align-items: center;
     }
 
