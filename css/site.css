@@ -603,6 +603,17 @@ section {
     gap: 0.5rem;
 }
 
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
 .social-icons a {
     width: 35px;
     height: 35px;
