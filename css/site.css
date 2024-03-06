@@ -276,6 +276,17 @@ section {
     outline: auto;
 }
 
+.perfil-alura {
+    background: linear-gradient(45deg, #2BFDBE, #004085);
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #004085;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+    text-align: center;
+}
 
 .about, .services, .skills, .teams, .contact, footer {
     font-family: 'Roboto', sans-serif;
