@@ -297,6 +297,19 @@ section {
     text-align: center;
 }
 
+.universidade {
+    color: #051933;
+}
+
+.curso {
+    color: #093366;
+    padding-bottom: 1rem;
+}
+
+.periodo {
+    color: #051933;
+}
+
 .about, .services, .skills, .teams, .contact, footer {
     font-family: 'Roboto', sans-serif;
 }
