@@ -238,6 +238,7 @@ section {
     border-radius: 6px;
     height: 100%;
     transition: 0.3s;
+    cursor: unset;
 }
 
     .card:hover {
